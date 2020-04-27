@@ -51,8 +51,4 @@ _END;
 		$var = htmlentities($var); 
 		return $var;
 	}	
-
-	
-
-
 ?>
