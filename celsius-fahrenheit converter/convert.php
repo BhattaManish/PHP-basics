@@ -1,8 +1,8 @@
 <?php
 
+	$f=$c= ''; 
 
-	$f=$c= '';
-
+	// checks if the fields are filled
 	if(isset($_POST['f'])) $f = sanitizeString($_POST['f']);
 	if(isset($_POST['c'])) $c = sanitizeString($_POST['c']);
 
@@ -22,6 +22,7 @@
 	}
 
 	
+	// code for display 
 	echo <<<_END
 	<html>
 		<head>
@@ -42,7 +43,7 @@
 	</html>
 _END;
 
-
+	// prevents form html injection 
 	function sanitizeString($var)
 	{
 		if(get_magic_quotes_gpc()) $var = stripslashes($var);
