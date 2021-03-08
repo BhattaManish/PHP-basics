@@ -1,2 +1,2 @@
 # PHP-basics
-This Respository contains small programming containing php,html,mysql,javascript
+This Respository contains basic code which  contains php,html,mysql,javascript
